@@ -6,7 +6,7 @@ spring:
   liquibase:
     enabled: true
   datasource:
-    url: jdbc:localhost://localhost:5432/task-tracker
+    url: jdbc:postgresql://localhost:5432/task-tracker
     username: postgres
     password: postgres
     driver-class-name: org.postgresql.Driver
