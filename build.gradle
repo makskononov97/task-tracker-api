@@ -38,7 +38,16 @@ dependencies {
 
     runtimeOnly "org.postgresql:postgresql"
 }
-//
+
+//tasks.create<Copy>("downloadLibs") {
+//    into(project.layout.buildDirectory.dir("dependency"))
+//            .from({
+//                configurations.matching{
+//                    it.isCanBeResolved && it.name == "runtimeClassPath"
+//                }.map(Configuration::resolve)
+//                        .flatten().distinct()
+//            })
+//}
 
 
 /**
