@@ -6,9 +6,11 @@ spring:
   liquibase:
     enabled: true
   datasource:
-    url: jdbc:postgresql://localhost:5432/task-tracker
-    username: postgres
-    password: postgres
+#    url: jdbc:postgresql://0.0.0.0:5432/task-tracker
+#    url: jdbc:postgresql://pg15/postgres
+    url: jdbc:postgresql://greenplum.lab.karpov.courses:6432/karpovcourses
+    username: student
+    password: Wrhy96_09iPcreqAS
     driver-class-name: org.postgresql.Driver
   jpa:
     properties:
